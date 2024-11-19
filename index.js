@@ -23,5 +23,5 @@ make.addEventListener('click', makeFile);
 
 function makeFile()
 {
-  alert("test");
+  alert("test2(index.jsから)");
 }
