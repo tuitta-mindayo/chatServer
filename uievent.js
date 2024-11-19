@@ -1,3 +1,4 @@
+import { makeFile } from "./index.js";
 //getElements
 const name = document.getElementById('name');
 const description = document.getElementById('description');
@@ -6,9 +7,9 @@ const minVersion = document.getElementById('minVersion');
 const make = document.getElementById('make');
 
 //EventListeners
-make.addEventListener('click', makeFile);
+make.addEventListener('click', makes);
 
-function makeFile()
+function makes()
 {
-  //alert("test");
+  makeFile();
 }
