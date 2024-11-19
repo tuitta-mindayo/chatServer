@@ -8,7 +8,7 @@ const make = document.getElementById('make');
 //EventListeners
 make.addEventListener('click', makeFile);
 
-function click()
+function makeFile()
 {
   alert("test");
 }
