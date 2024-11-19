@@ -1,5 +1,6 @@
 let fs = require('fs');
 let http = require('http');
+const log = require('electron-log');
 let server = http.createServer((req, res) => {
     fs.readFile('/index.html', 'UTF-8', (error, data) => {
         res.writeHead(200, { 'Content-Type': 'text/html' });
@@ -12,14 +13,13 @@ server.listen(3000);
 console.log('Start Server!');
 
 //getElements
-const name = document.getElementById('name');
-const description = document.getElementById('description');
-const addonType = document.getElementById('addonType');
-const minVersion = document.getElementById('minVersion');
-const make = document.getElementById('make');
+const make = document.querySelector('.make');
 
 //EventListeners
-make.addEventListener('click', makeFile);
+button.addEventListener('click', function (clickEvent) {
+    //log.info("ボタン押された");
+    alert("test2(index.jsから)");
+})
 
 function makeFile()
 {
